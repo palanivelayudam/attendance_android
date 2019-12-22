@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="taskadapter"
+            type="com.acceedo.attendancesystem.adapter.TaskAdapter"/>
+    </data>
+
+<RelativeLayout
+    android:id="@+id/rrTotalLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_3sdp">
+
+    <TextView
+        android:id="@+id/tvTaskName"
+        style="@style/text_secondaryregularprimarycolor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/llTaskHrs"
+        android:layout_alignParentLeft="true"
+        android:padding="@dimen/_2sdp"
+        android:text="Sample Task" />
+
+    <TextView
+        android:id="@+id/tvTaskDesc"
+        style="@style/text_secondaryregular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTaskName"
+        android:layout_toStartOf="@+id/llTaskHrs"
+        android:padding="@dimen/_2sdp"
+        android:textSize="@dimen/_10sdp"
+        android:text="Sample Task" />
+
+    <LinearLayout
+        android:id="@+id/llTaskHrs"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvTaskHrs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4:40"
+            style="@style/text_secondaryregular"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:textColor="@color/PrimarytextColor"
+            android:textSize="@dimen/_14sdp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text_secondaryregular"
+            android:textColor="@color/PrimarytextColor"
+            android:text="Hrs"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:textSize="@dimen/_8sdp" />
+    </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
+</layout>

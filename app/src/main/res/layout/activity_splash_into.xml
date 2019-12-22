@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.acceedo.attendancesystem.activities.SplashIntoActivity" />
+    </data>
+
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".activities.SplashIntoActivity">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/slide_viewpager"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints" />
+
+
+        <LinearLayout
+            android:id="@+id/viewPagerCountDots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_90sdp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="22dp"
+            android:src="@drawable/forwardarrow"
+            android:visibility="visible"
+            app:fabSize="mini"
+            app:backgroundTint="@color/litered"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button"
+            style="@style/button_primaryheadingcolor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/cornercurve_button"
+            android:paddingLeft="@dimen/_35sdp"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingRight="@dimen/_35sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            android:text="@string/get_started"
+            android:visibility="invisible"
+            tools:ignore="MissingConstraints" />
+
+
+    </RelativeLayout>
+
+</layout>

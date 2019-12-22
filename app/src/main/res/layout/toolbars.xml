@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tool_barmain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary"
+    android:minHeight="?actionBarSize"
+    android:theme="@style/AppTheme.AppBarOverlay"
+    app:titleTextAppearance="@style/Toolbar.TitleTextSmall"
+    app:popupTheme="@style/AppTheme.PopupOverlay"
+    >
+
+    <TextView
+        android:id="@+id/toolbar_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/robotoregular"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+    <ImageButton
+        android:id="@+id/anoce_editoolmenu"
+        style="@style/Base.Widget.AppCompat.ActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search"
+        android:layout_gravity="right"
+        android:visibility="gone"
+        android:tint="@color/white" />
+
+</androidx.appcompat.widget.Toolbar>

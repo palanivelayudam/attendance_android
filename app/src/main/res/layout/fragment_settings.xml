@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.acceedo.attendancesystem.fragments.SettingsFragment" />
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Graybg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvprofilename"
+                style="@style/text_primaryheadingmedium"
+                android:layout_gravity="left|center"
+                android:layout_marginTop="5dp"
+                android:text="@string/preferences" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/stokecolor" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivemailnotification"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/mailnoti" />
+
+                <TextView
+                    style="@style/text_primaryheadingmedium"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/PrimarytextColor"
+                    android:layout_toRightOf="@+id/ivemailnotification"
+                    android:text="@string/notifaication_enable_email_notification"/>
+
+                <Switch
+                    android:id="@+id/switchEmailNoti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:checked="false" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivpushnotification"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/notification"
+                    />
+
+                <TextView
+                    style="@style/text_primaryheadingmedium"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/ivpushnotification"
+                    android:text="@string/notifaication_enable_push_notification"/>
+
+                <Switch
+                    android:id="@+id/switchPushNoti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:checked="false" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivsmsnotification"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/messagenoti"
+                    />
+
+                <TextView
+                    style="@style/text_primaryheadingmedium"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/ivsmsnotification"
+                    android:text="@string/notifaication_enable_sms_notification"/>
+
+                <Switch
+                    android:id="@+id/switchSmsNoti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:checked="false" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

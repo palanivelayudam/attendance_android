@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<data>
+
+    <variable
+        name="timesheet"
+        type="com.acceedo.attendancesystem.adapter.TimeSheetListAdapter" />
+</data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="@dimen/_15sdp"
+        android:id="@+id/crdselecttruck"
+        app:cardCornerRadius="@dimen/_3sdp"
+        app:cardElevation="@dimen/_3sdp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_8sdp"
+    android:layout_marginLeft="@dimen/_8sdp"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.3"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civProfileImg"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rrDataLayout"
+        android:layout_width="0dp"
+        android:layout_weight="1.2"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvfullname"
+                style="@style/text_primaryheadingmedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/time_sheet"
+                android:textColor="@color/PrimarytextColor"
+                android:textSize="@dimen/_12sdp" />
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/_3sdp"
+                android:visibility="visible"
+                android:background="@color/Gray300" />
+            <TextView
+                style="@style/text_secondaryregular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Code:"
+                android:textColor="@color/Gray800"
+                android:textSize="@dimen/_10sdp" />
+            <TextView
+                android:id="@+id/tvcode"
+                style="@style/text_secondaryregular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/time_sheet"
+                android:textColor="@color/Gray600"
+                android:textSize="@dimen/_10sdp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/text_secondaryregular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sup:"
+                android:textColor="@color/Gray800"
+                android:textSize="@dimen/_9sdp" />
+        <TextView
+            android:id="@+id/tvsupervisor"
+            style="@style/text_secondaryregular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_sheet"
+            android:textColor="@color/Gray600"
+            android:textSize="@dimen/_9sdp"/>
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/_3sdp"
+                android:visibility="visible"
+                android:background="@color/Gray300" />
+
+            <TextView
+                style="@style/text_secondaryregular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Con:"
+                android:textColor="@color/Gray800"
+                android:textSize="@dimen/_9sdp" />
+        <TextView
+            android:id="@+id/tvcontractor"
+            style="@style/text_secondaryregular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_sheet"
+            android:textColor="@color/Gray600"
+            android:textSize="@dimen/_9sdp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/text_secondaryregular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dep:"
+                android:textColor="@color/Gray800"
+                android:textSize="@dimen/_9sdp" />
+        <TextView
+            android:id="@+id/tvdepartment"
+            style="@style/text_secondaryregular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Gray600"
+            android:text="@string/time_sheet"
+            android:visibility="visible"
+            android:textSize="@dimen/_9sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/text_secondaryregular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In:"
+                android:textColor="@color/Gray800"
+                android:textSize="@dimen/_9sdp" />
+            <TextView
+                android:id="@+id/tvempintime"
+                style="@style/text_secondaryregular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Gray600"
+                android:text="@string/time_sheet"
+                android:visibility="visible"
+                android:textSize="@dimen/_9sdp" />
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/_3sdp"
+                android:visibility="visible"
+                android:background="@color/Gray300" />
+            <TextView
+                style="@style/text_secondaryregular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Out:"
+                android:textColor="@color/Gray800"
+                android:textSize="@dimen/_9sdp" />
+            <TextView
+                android:id="@+id/tvempouttime"
+                style="@style/text_secondaryregular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/time_sheet"
+                android:textColor="@color/Gray600"
+                android:textSize="@dimen/_9sdp" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/ivRightArrw"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:visibility="gone"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:src="@drawable/right_arrow" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vvBottomline"
+        android:layout_width="match_parent"
+        android:layout_height="0.55dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:visibility="gone"
+        android:background="@color/stokecolor" />
+</LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

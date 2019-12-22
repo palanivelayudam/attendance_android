@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.acceedo.attendancesystem.fragments.AboutFragment" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tvVersionNameSupport">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivlogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginBottom="@dimen/_35sdp"
+                    android:src="@drawable/cams_logo" />
+
+
+                <TextView
+                    android:id="@+id/tvSisar"
+                    style="@style/text_secondaryregular"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="5sp"
+                    android:text="At SISAR, We have worked hard to ensure our users interest are prioritised."
+                    android:textColor="@color/liteBlack"
+                    android:textSize="@dimen/_13sdp" />
+
+                <TextView
+                    android:id="@+id/tv2"
+                    style="@style/text_secondaryregular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="Let us know your Feedback!"
+                    android:textColor="@color/liteBlack"
+                    android:textSize="@dimen/_13sdp" />
+
+                <Button
+                    android:id="@+id/btnFeedback"
+                    style="@style/button_secondaryheadingmedium"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/chip_background"
+                    android:backgroundTint="?attr/colorPrimary"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="@string/feedback"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/tvVersionNameSupport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:fontFamily="@font/robotoregular"
+            android:gravity="center"
+            android:text="Version Name : 1.0"
+            android:textColor="@color/liteBlack"
+            android:textSize="@dimen/_11sdp"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+</layout>

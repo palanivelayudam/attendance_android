@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <font
+        android:font="@font/robotoblack"
+        android:fontStyle="normal"
+        android:fontWeight="900"
+        app:font="@font/robotoblack"
+        app:fontStyle="normal"
+        app:fontWeight="900" />
+
+    <font
+        android:font="@font/robotoblackitalic"
+        android:fontStyle="normal"
+        android:fontWeight="900"
+        app:font="@font/robotoblackitalic"
+        app:fontStyle="normal"
+        app:fontWeight="900" />
+
+    <font
+        android:font="@font/robotobold"
+        android:fontStyle="normal"
+        android:fontWeight="700"
+        app:font="@font/robotobold"
+        app:fontStyle="normal"
+        app:fontWeight="700" />
+
+    <font
+        android:font="@font/robotobolditalic"
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        app:font="@font/robotobolditalic"
+        app:fontStyle="normal"
+        app:fontWeight="400" />
+    <font
+        android:font="@font/robotoitalic"
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        app:font="@font/robotoitalic"
+        app:fontStyle="normal"
+        app:fontWeight="400" />
+    <font
+        android:font="@font/robotolightitalic"
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        app:font="@font/robotolightitalic"
+        app:fontStyle="normal"
+        app:fontWeight="400" />
+    <font
+        android:font="@font/robotolight"
+        android:fontStyle="normal"
+        android:fontWeight="300"
+        app:font="@font/robotolight"
+        app:fontStyle="normal"
+        app:fontWeight="300" />
+    <font
+        android:font="@font/robotomedium"
+        android:fontStyle="normal"
+        android:fontWeight="500"
+        app:font="@font/robotomedium"
+        app:fontStyle="normal"
+        app:fontWeight="500" />
+    <font
+        android:font="@font/robotomediumitalic"
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        app:font="@font/robotomediumitalic"
+        app:fontStyle="normal"
+        app:fontWeight="400" />
+
+    <font
+        android:font="@font/robotoregular"
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        app:font="@font/robotolight"
+        app:fontStyle="normal"
+        app:fontWeight="400" />
+    <font
+        android:font="@font/robotoregular"
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        app:font="@font/robotolight"
+        app:fontStyle="normal"
+        app:fontWeight="400" />
+    <font
+        android:font="@font/robotothin"
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        app:font="@font/robotothin"
+        app:fontStyle="normal"
+        app:fontWeight="400" />
+    <font
+        android:font="@font/robotothinitalic"
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        app:font="@font/robotothinitalic"
+        app:fontStyle="normal"
+        app:fontWeight="400" />
+</font-family>

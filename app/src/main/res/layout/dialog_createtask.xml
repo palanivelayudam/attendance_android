@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/_10sdp">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_primaryheadingmedium"
+                android:textColor="@color/PrimarytextColor"
+                android:text="@string/enterurl"/>
+            <RelativeLayout
+                android:id="@+id/rlTask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:background="@drawable/bottomline"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/button_createsecondaryregular"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_1sdp"
+                        android:layout_marginRight="@dimen/_1sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:hint="@string/enterurl"
+                        android:paddingRight="2dp">
+
+                        <EditText
+                            android:id="@+id/et_Task"
+                            style="@style/button_createsecondaryregular"
+                            android:gravity="left"
+                            android:maxLines="3"
+                            android:background="@null"
+                            android:focusable="true"
+                            android:paddingTop="6dp"
+                            android:imeOptions="actionDone"
+                            android:paddingRight="@dimen/_10sdp"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                     </LinearLayout>
+
+            </RelativeLayout>
+            <TextView
+                style="@style/text_primaryheadingmedium"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/PrimarytextColor"
+                android:text="ref:http://att.acceedo.in"/>
+            <TextView
+                style="@style/text_primaryheadingmedium"
+                android:textSize="@dimen/_11sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/PrimarytextColor"
+                android:text="ref:http://122.165.206.136 | no traling slash "/>
+
+            <RelativeLayout
+                android:id="@+id/rlSpnLayout"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:background="@drawable/bottomline"
+                android:clickable="true"
+                android:focusable="true"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spnWeekChanges"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:overlapAnchor="false"
+                    android:background="@null"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:src="@drawable/spndownarrow"
+                    android:tint="@color/stokebottomlinecolor"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlComments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:background="@drawable/bottomline"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/button_createsecondaryregular"
+                        android:layout_marginLeft="@dimen/_1sdp"
+                        android:layout_marginRight="@dimen/_1sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:hint="@string/comments"
+                        android:visibility="gone"
+                        android:paddingRight="2dp">
+
+                        <EditText
+                            android:id="@+id/et_Comments"
+                            style="@style/button_createsecondaryregular"
+                            android:gravity="left"
+                            android:maxLines="4"
+                            android:background="@null"
+                            android:paddingTop="6dp"
+                            android:imeOptions="actionNext"
+                            android:paddingRight="@dimen/_10sdp"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btncancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_25sdp"
+                    android:background="@drawable/chip_background"
+                    android:backgroundTint="@color/Graybg"
+                    android:text="@string/cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@color/secondarytextColor"
+                    android:textSize="@dimen/_8sdp"
+                    style="@style/text_primaryheadingmediumwhite"/>
+                <Button
+                    android:id="@+id/btncreate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_25sdp"
+                    android:background="@drawable/chip_background"
+                    android:backgroundTint="@color/PrimaryGreenwColor"
+                    android:text="@string/create"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/_8sdp"
+                    style="@style/text_primaryheadingmediumwhite"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

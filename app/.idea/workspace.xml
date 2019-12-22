@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="319de47c-4a20-4d51-9ba1-a2bdaee18657" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/Pojo/StudentAttendance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/activities/QrScanActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/adapter/StudentAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/chip_background1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/qrcodescan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/splashscree.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_qr_scan.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/adapterstudentaddence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/dialog_attendanceselect.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/androidTest/java/com/sisar/wms/ExampleInstrumentedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/androidTest/java/com/acceedo/attendancesystem/ExampleInstrumentedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/development/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/development/google-services.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/local/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/local/google-services.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/FireBaseActivity/MyFirebaseInstanceIDService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/FireBaseActivity/MyFirebaseInstanceIDService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/FireBaseActivity/MyFirebaseMessagingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/FireBaseActivity/MyFirebaseMessagingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/Pojo/ListMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/Pojo/ListMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/Pojo/PlacesResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/Pojo/PlacesResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/Pojo/SliderDashBoardPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/Pojo/SliderDashBoardPojo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/Pojo/SplashIntro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/Pojo/SplashIntro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/Pojo/TaskInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/Pojo/TaskInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/activities/BaseActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/activities/BaseActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/activities/ChangePassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/activities/ChangePassword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/activities/CropActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/activities/CropActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/activities/Feedback.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/activities/Feedback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/activities/LoginAcitivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/activities/LoginAcitivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/activities/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/activities/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/activities/ProfileActvity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/activities/ProfileActvity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/activities/SplashIntoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/activities/SplashIntoActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/activities/SplashScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/activities/SplashScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/activities/TaskDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/activities/TaskDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/activities/TimeSheetActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/activities/TimeSheetActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/adapter/AdapterRecentTimesheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/adapter/AdapterRecentTimesheet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/adapter/CustomListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/adapter/CustomListAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/adapter/IntroPagerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/adapter/IntroPagerAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/adapter/ListMenuAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/adapter/ListMenuAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/adapter/MySpinnerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/adapter/MySpinnerAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/adapter/SliderDashBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/adapter/SliderDashBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/adapter/TaskAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/adapter/TaskAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/adapter/TimeSheetListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/adapter/TimeSheetListAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/adapter/TimeSheetSlideAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/adapter/TimeSheetSlideAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/apiclient/ApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/apiclient/ApiClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/circularprogressview/AnimationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/circularprogressview/AnimationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/circularprogressview/AnimationMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/circularprogressview/AnimationMsg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/circularprogressview/AnimationState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/circularprogressview/AnimationState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/circularprogressview/AnimationStateChangedListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/circularprogressview/AnimationStateChangedListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/circularprogressview/BarStartEndLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/circularprogressview/BarStartEndLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/circularprogressview/CircleProgressView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/circularprogressview/CircleProgressView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/circularprogressview/ColorUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/circularprogressview/ColorUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/circularprogressview/Direction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/circularprogressview/Direction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/circularprogressview/StrokeCap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/circularprogressview/StrokeCap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/circularprogressview/TextMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/circularprogressview/TextMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/circularprogressview/UnitPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/circularprogressview/UnitPosition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/common/ClickListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/common/ClickListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/common/CommonFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/common/CommonFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/common/Corner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/common/Corner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/common/CustomTextWatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/common/CustomTextWatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/common/CustomTextWatcherNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/common/CustomTextWatcherNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/common/CustomTimePickerDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/common/CustomTimePickerDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/common/CustomTypefaceSpan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/common/CustomTypefaceSpan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/common/EditTextLocker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/common/EditTextLocker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/common/MySpannable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/common/MySpannable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/common/OnLoadMoreListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/common/OnLoadMoreListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/common/OnboardingPageTransformer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/common/OnboardingPageTransformer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/common/ProportionalImageView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/common/ProportionalImageView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/common/RecyclerTouchListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/common/RecyclerTouchListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/common/RoundedDrawable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/common/RoundedDrawable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/common/RoundedImageView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/common/RoundedImageView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/common/ShadowLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/common/ShadowLayout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/common/Shared_Preference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/common/Shared_Preference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/common/TouchImageView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/common/TouchImageView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/common/VerticalScrollingBehavior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/common/VerticalScrollingBehavior.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/database/DBManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/database/DBManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/database/DatabaseHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/database/DatabaseHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/fragments/AboutFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/fragments/AboutFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/fragments/BaseFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/fragments/BaseFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/fragments/DashBoardFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/fragments/DashBoardFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/fragments/HelpFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/fragments/HelpFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/fragments/LeaveRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/fragments/LeaveRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/fragments/SettingsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/fragments/SettingsFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/fragments/TimeSheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/fragments/TimeSheet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/fragments/TimeSheetDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/fragments/TimeSheetDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/interfaces/APIService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/interfaces/APIService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/interfaces/RefreshTokenCallbacks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/interfaces/RefreshTokenCallbacks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/utils/AudioPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/utils/AudioPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/utils/CachedMediaPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/utils/CachedMediaPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/utils/CommonFuns.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/utils/CommonFuns.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/utils/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/utils/CropDemoPreset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/utils/CropDemoPreset.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/utils/CropImageViewOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/utils/CropImageViewOptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/utils/MyCustomLayoutManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/utils/MyCustomLayoutManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/utils/RuntimePermissionsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/utils/RuntimePermissionsActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/utils/SpacesItemDecoration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/utils/SpacesItemDecoration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sisar/wms/utils/SystemsUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acceedo/attendancesystem/utils/SystemsUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_feedback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_feedback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_login_acitivity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_login_acitivity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_profile_actvity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_profile_actvity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_splash_into.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_splash_into.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_task_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_task_details.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_time_sheet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_time_sheet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activitychangepassword.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activitychangepassword.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/adapterdashsliderpager.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/adapterdashsliderpager.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/adapterintropager.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/adapterintropager.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/adapterlisttimesheet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/adapterlisttimesheet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/adaptermenu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/adaptermenu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/adapterrecenttimesheet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/adapterrecenttimesheet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/adaptertasklist.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/adaptertasklist.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/dialog_createtask.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/dialog_createtask.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_about.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_about.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_dashboard.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_dashboard.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_leaverequest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_leaverequest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_time_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_time_detail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_timesheet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_timesheet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/help.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/help.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/splashscreen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/splashscreen.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/xml/network_security_config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/xml/network_security_config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sisar/wms/ExampleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/acceedo/attendancesystem/ExampleUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/version.properties" beforeDir="false" afterPath="$PROJECT_DIR$/version.properties" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/local.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-61" />
+    <option name="y" value="80" />
+    <option name="width" value="1300" />
+    <option name="height" value="688" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="android.sdk.path" value="F:/AndriodSdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="319de47c-4a20-4d51-9ba1-a2bdaee18657" name="Default Changelist" comment="" />
+      <created>1571372425086</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571372425086</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1296" height="754" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" visible="true" weight="0.32928804" />
+      <window_info id="Structure" side_tool="true" />
+      <window_info id="Build Variants" side_tool="true" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="Resources Explorer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Captures" order="0" weight="0.25" />
+      <window_info anchor="bottom" id="Run" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="TODO" />
+      <window_info anchor="bottom" id="Debug" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Flutter Performance" side_tool="true" />
+      <window_info anchor="bottom" id="Build" weight="0.32943144" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Gradle" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Flutter Inspector" />
+      <window_info anchor="right" id="Flutter Outline" />
+      <window_info anchor="right" id="Android WiFi ADB" />
+      <window_info anchor="right" id="Palette&#9;" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/local.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>Android API 15 Platform</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

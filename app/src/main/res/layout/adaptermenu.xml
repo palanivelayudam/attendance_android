@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="menuadapter"
+            type="com.acceedo.attendancesystem.adapter.ListMenuAdapter" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/llMenuSelectLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/ivmoduleimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/testicon" />
+
+            <TextView
+                android:id="@+id/tvName"
+                style="@style/text_primaryheadingregular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_toLeftOf="@+id/tvcount"
+                android:layout_toRightOf="@+id/ivmoduleimage"
+                android:gravity="start|center"
+                android:maxLines="1"
+                android:text="@string/app_name"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/tvcount"
+                style="@style/text_secondaryregularmenusmall8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/notify_badge_poll"
+                android:gravity="center"
+                android:minWidth="25dp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:text="10"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="data"
+            type="com.acceedo.attendancesystem.activities.TimeSheetActivity"/>
+    </data>
+
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/rrToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:padding="@dimen/_3sdp"
+            android:background="@color/DarkPrimaryColor">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:src="@drawable/backarrow"/>
+
+                <RelativeLayout
+                    android:id="@+id/rlSpnLayout"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="25dp"
+                    android:layout_toRightOf="@+id/ivBack"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spnWeekChanges"
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:overlapAnchor="false"
+                        android:background="@null"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:focusable="false"
+                        android:clickable="false"
+                        android:src="@drawable/spndownarrow" />
+
+                </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chip_background"
+                android:text="@string/submit"
+                android:textSize="@dimen/_8sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_3sdp"
+                style="@style/text_primaryheadingmediumwhite"/>
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rrTopLayout"
+            android:layout_below="@+id/rrToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/DarkPrimaryColor">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tvtoptime"
+                    style="@style/text_secondary_lightfontwhitesize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="34:00"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tvhours"
+                    style="@style/text_secondaryregular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvtoptime"
+                    android:text="Hours"
+                    android:gravity="center"
+                    android:textColor="@color/secondarydarktextColor" />
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabTimes"
+                    style="@style/MyCustomTabLayout3"
+                    android:layout_width="match_parent"
+                    app:tabMode="scrollable"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/tvhours"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rrTopLayout"
+            android:visibility="visible"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fbplus"
+            app:fabSize="normal"
+            app:backgroundTint="@color/litered"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/_15sdp"/>
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,261 @@
+<resources>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+        <item name="android:textColorHint">@color/PrimaryColor</item>
+
+        <item name="colorPrimary">@color/PrimaryColor</item>
+        <item name="colorPrimaryDark">@color/DarkPrimaryColor</item>
+        <item name="colorAccent">@color/PrimaryColor</item>
+        <item name="colorControlActivated">@color/PrimaryColor</item>
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="DefaultNumberPickerTheme" parent="AppTheme">
+        <item name="colorControlNormal">@color/litered</item>
+        <item name="android:textColorPrimary">@color/PrimaryColor</item>
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="Toolbar.TitleTextSmall" parent="Base.TextAppearance.AppCompat.Title">
+
+        <item name="android:textSize">@dimen/_15sdp</item>
+        <item name="android:textColor">@color/white</item>
+        <!--<item name="android:textAppearance">@android:style/TextAppearance.Large</item>-->
+    </style>
+    <style name="NavigationTheme" parent="AppTheme">
+        <item name="listPreferredItemHeightSmall">50dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="MyCustomTabLayout3" parent="Widget.Design.TabLayout">
+        <item name="tabMaxWidth">@dimen/tab_max_width</item>
+        <item name="tabIndicatorColor">@color/litered</item>
+        <item name="tabIndicatorHeight">4dp</item>
+        <item name="tabPaddingStart">12dp</item>
+        <item name="tabPaddingEnd">12dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabTextAppearance">@style/MyCustomTabTextAppearance2</item>
+        <item name="tabSelectedTextColor">@color/white</item>
+    </style>
+    <style name="MyCustomTabTextAppearance2" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/Gray60</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:fontFamily">@font/robotoregular </item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <declare-styleable name="ShadowLayout">
+        <attr name="sl_cornerRadius" format="dimension" />
+        <attr name="sl_shadowRadius" format="dimension" />
+        <attr name="sl_shadowColor" format="color" />
+        <attr name="sl_dx" format="dimension" />
+        <attr name="sl_dy" format="dimension" />
+    </declare-styleable>
+
+    <!--SplashIntro Style-->
+    <style name="text_primaryheadingmediumsize16">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/PrimaryColor</item>
+        <item name="android:fontFamily">@font/robotomedium</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+    </style>
+    <style name="text_primaryheadingmediumwhite">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/robotomedium</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+    </style>
+
+    <style name="text_secondaryregularsmall">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/secondarytextColor</item>
+        <item name="android:fontFamily">@font/robotoregular</item>
+        <item name="android:textSize">@dimen/_11sdp</item>
+    </style>
+    <!--NavigationMenu-->
+    <style name="text_secondaryregularmenusmall">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/secondarydarktextColor</item>
+        <item name="android:fontFamily">@font/robotoregular</item>
+        <item name="android:textSize">@dimen/_10sdp</item>
+    </style>
+    <style name="text_secondaryregularmenusmall8">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/secondarydarktextColor</item>
+        <item name="android:fontFamily">@font/robotoregular</item>
+        <item name="android:textSize">@dimen/_8sdp</item>
+    </style>
+    <style name="text_secondaryregular">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/secondarytextColor</item>
+        <item name="android:fontFamily">@font/robotoregular</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+    </style>
+    <style name="text_secondary">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:fontFamily">@font/robotoregular</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+    </style>
+    <style name="text_secondaryregularprimarycolor">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/PrimarytextColor</item>
+        <item name="android:fontFamily">@font/robotoregular</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+    </style>
+    <!--Login-->
+    <style name="text_secondaryregularwhitebig">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/robotoregular</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+    </style>
+
+    <style name="text_secondaryregularwhite">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/robotoregular</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+    </style>
+
+    <style name="text_primaryheadingmedium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/PrimarytextColor</item>
+        <item name="android:fontFamily">@font/robotomedium</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+    </style>
+    <style name="text_primaryheadingregular">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/PrimarytextColor</item>
+        <item name="android:fontFamily">@font/robotoregular</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+    </style>
+    <style name="text_secondaryheadingmedium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <!-- <item name="android:textColor">@color/PrimaryText</item>-->
+        <item name="android:fontFamily">@font/robotomedium</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+    </style>
+    <style name="text_secondaryheadingmediumsize">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <!-- <item name="android:textColor">@color/PrimaryText</item>-->
+        <item name="android:fontFamily">@font/robotomedium</item>
+        <item name="android:textSize">@dimen/_25sdp</item>
+    </style>
+
+
+
+    <style name="text_secondaryregulargray">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/Gray200</item>
+        <item name="android:fontFamily">@font/robotoregular</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+    <style name="text_secondary_lightfontwhitesize">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/robotolight</item>
+        <item name="android:textSize">@dimen/_25sdp</item>
+    </style>
+
+    <style name="text_secondary_lightfont">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:fontFamily">@font/robotolight</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+    </style>
+    <style name="button_primaryheadingcolor">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+         <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/robotomedium</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+    </style>
+    <style name="button_secondaryheadingmedium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <!-- <item name="android:textColor">@color/PrimaryText</item>-->
+        <item name="android:fontFamily">@font/robotomedium</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+    </style>
+
+    <style name="button_secondaryregular">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <!--<item name="android:textColor">@color/SecondaryText</item>-->
+        <item name="android:fontFamily">@font/robotoregular</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="button_secondary_lightfont">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <!--<item name="android:textColor">@color/SecondaryText</item>-->
+        <item name="android:fontFamily">@font/robotolight</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+    <style name="button_createsecondaryregular">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:maxHeight">100dp</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:textIsSelectable">true</item>
+        <item name="android:textColorHint">@color/secondarytextColor</item>
+        <item name="android:textColor">@color/PrimarytextColor</item>
+        <item name="android:fontFamily">@font/robotoregular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+
+
+</resources>

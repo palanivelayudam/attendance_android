@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.acceedo.attendancesystem.activities.TaskDetails" />
+    </data>
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rrToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/DarkPrimaryColor"
+            android:padding="@dimen/_3sdp">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:src="@drawable/backarrow" />
+
+            <TextView
+                style="@style/text_secondaryregularwhite"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/ivBack"
+                android:text="Employee Details" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rrtopimage"
+            android:layout_below="@+id/rrToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/PrimaryColor"
+            android:paddingBottom="@dimen/_25sdp"
+            android:paddingTop="@dimen/_20sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/civprofile"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/avatar"
+                        android:layout_gravity="top|center"
+                        app:civ_border_color="@color/white"
+                        app:civ_border_width="2.5dp" />
+
+                <TextView
+                    android:id="@+id/tvname"
+                    style="@style/text_secondaryregularwhite"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textSize="@dimen/_15sdp"
+                    android:text="suresh" />
+
+                <TextView
+                    android:id="@+id/tvemail"
+                    style="@style/text_secondary_lightfontwhitesize"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/_15sdp"
+                    android:visibility="gone"
+                    android:text="suresh@gmail.com" />
+                <TextView
+                    android:id="@+id/tvphone"
+                    style="@style/text_secondary_lightfontwhitesize"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/_13sdp"
+                    android:text="suresh@gmail.com" />
+
+                <TextView
+                    android:id="@+id/tvempcode"
+                    style="@style/text_secondaryregularwhite"
+                    android:textSize="@dimen/_13sdp"
+                    android:textColor="@color/secondarydarktextColor"
+                    android:layout_gravity="center"
+                    android:text="Hours" />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/editfb"
+            android:layout_gravity="right"
+            android:layout_marginTop="-30dp"
+            app:fabSize="normal"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/_10sdp"
+            app:backgroundTint="@color/litered" />
+        <LinearLayout
+            android:layout_below="@+id/rrtopimage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_13sdp"
+            android:paddingLeft="@dimen/_2sdp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+                <ImageView
+                    android:id="@+id/ivTask2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:src="@drawable/task"
+                    android:tint="@color/PrimaryColor"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:visibility="visible"
+                    android:layout_toRightOf="@+id/ivTask2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/text_primaryheadingmedium"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_marginTop="-1dp"
+                        android:text="@string/intime"/>
+                    <TextView
+                        android:id="@+id/tvouttime"
+                        style="@style/text_secondaryregular"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:textSize="@dimen/_10sdp"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:visibility="visible">
+                <ImageView
+                    android:id="@+id/ivTask1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:src="@drawable/task"
+                    android:tint="@color/PrimaryColor"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:visibility="visible"
+                    android:layout_toRightOf="@+id/ivTask1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/text_primaryheadingmedium"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_marginTop="-1dp"
+                        android:text="@string/outtime"/>
+                    <TextView
+                        android:id="@+id/tvintime"
+                        style="@style/text_secondaryregular"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:textSize="@dimen/_10sdp"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:visibility="visible">
+                <ImageView
+                    android:id="@+id/ivTask"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:src="@drawable/task"
+                    android:tint="@color/PrimaryColor"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:visibility="visible"
+                    android:layout_toRightOf="@+id/ivTask"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/text_primaryheadingmedium"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_marginTop="-1dp"
+                        android:text="@string/contractor"/>
+                    <TextView
+                        android:id="@+id/tvadress"
+                        style="@style/text_secondaryregular"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:text="Sed do eiusmod tempor incididunt ut labore et dolore"
+                        android:textSize="@dimen/_10sdp"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+                <ImageView
+                    android:id="@+id/ivProject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/project"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:tint="@color/PrimaryColor"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/ivProject"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        style="@style/text_primaryheadingmedium"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_marginTop="-1dp"
+                        android:text="@string/supervisor"/>
+                    <TextView
+                        android:id="@+id/tvsupervisor"
+                        style="@style/text_secondaryregular"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:text="Lorem project"
+                        android:textSize="@dimen/_10sdp"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+                <ImageView
+                    android:id="@+id/ivcomments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/comments"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:tint="@color/PrimaryColor"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/ivcomments"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/text_primaryheadingmedium"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_marginTop="-1dp"
+                        android:text="@string/department"/>
+                    <TextView
+                        android:id="@+id/tvdepartment"
+                        style="@style/text_secondaryregular"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:textSize="@dimen/_10sdp"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/_30sdp"
+                android:paddingLeft="@dimen/_30sdp"
+                android:backgroundTint="@color/Gray500"
+                android:background="@drawable/chip_background1"
+                android:text="@string/cancel"
+                android:onClick="cancelclick"
+                android:textColor="@color/white"
+                android:layout_margin="@dimen/_10sdp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/_30sdp"
+                android:paddingLeft="@dimen/_30sdp"
+                android:background="@drawable/chip_background1"
+                android:text="@string/submit"
+                android:onClick="submitclick"
+                android:textColor="@color/white"
+                android:layout_margin="@dimen/_10sdp"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>

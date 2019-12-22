@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/llTopLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:background="@color/PrimaryColor">
+        <TextView
+            android:id="@+id/tvHoursmins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mins"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            style="@style/text_secondaryregular"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp"/>
+
+        <TextView
+            android:id="@+id/tvSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chip_background"
+            android:text="@string/submit"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            style="@style/text_primaryheadingmediumwhite"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hours"
+                style="@style/text_secondaryregular"
+                android:textColor="@color/PrimarytextColor"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+            <NumberPicker
+                android:id="@+id/npHours"
+                style="@style/text_secondaryregularprimarycolor"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:theme="@style/DefaultNumberPickerTheme"
+                android:layout_margin="@dimen/_8sdp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mins"
+                style="@style/text_secondaryregular"
+                android:textColor="@color/PrimarytextColor"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+            <NumberPicker
+                android:id="@+id/npMins"
+                style="@style/text_secondaryregularprimarycolor"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:theme="@style/DefaultNumberPickerTheme"
+                android:layout_margin="@dimen/_8sdp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

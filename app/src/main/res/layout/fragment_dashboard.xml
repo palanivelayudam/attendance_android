@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.acceedo.attendancesystem.fragments.DashBoardFragment" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/Graybg">
+
+                <RelativeLayout
+                    android:id="@+id/rlProfileLayt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/DarkPrimaryColor"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_15sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_60sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+
+                            android:id="@+id/civ_profileimg"
+                            android:layout_width="@dimen/_55sdp"
+                            android:layout_height="@dimen/_55sdp"
+                            android:src="@drawable/avatar"
+                            android:layout_centerVertical="true"
+                            app:civ_border_color="@color/white"
+                            app:civ_border_width="1.5dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/civ_profileimg"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvname"
+                                style="@style/text_secondaryregularwhite"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:textSize="@dimen/_14sdp" />
+
+                            <TextView
+                                android:id="@+id/tvJobtitle"
+                                style="@style/text_secondaryregulargray"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"/>
+                            <TextView
+                                android:id="@+id/tvemail"
+                                style="@style/text_secondaryregulargray"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"/>
+                        </LinearLayout>
+
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/crdModule"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rlProfileLayt"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="-60dp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    app:cardCornerRadius="@dimen/_2sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/rlModuleOne"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/_15sdp"
+                            android:paddingTop="@dimen/_10sdp"
+                            android:paddingRight="@dimen/_15sdp"
+                            android:paddingBottom="@dimen/_10sdp">
+
+                            <ImageView
+                                android:id="@+id/ivTimesheet"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/menutimesheet"
+                                tools:ignore="ContentDescription" />
+
+                            <TextView
+                                style="@style/text_secondaryregular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:layout_toEndOf="@+id/ivTimesheet"
+                                android:text="Scan Employee"
+                                android:textColor="@color/PrimarytextColor"
+                                android:textSize="@dimen/_10sdp"
+                                tools:ignore="RelativeOverlap" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_10sdp"
+                                android:layout_height="@dimen/_10sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/right_arrow"
+                                tools:ignore="ContentDescription" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:id="@+id/vvModuleOne"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/Gray200" />
+
+                        <RelativeLayout
+                            android:id="@+id/rlModuleTwo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/_15sdp"
+                            android:paddingTop="@dimen/_10sdp"
+                            android:paddingRight="@dimen/_15sdp"
+                            android:paddingBottom="@dimen/_10sdp">
+
+                            <ImageView
+                                android:id="@+id/ivmodule2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/menutask"
+                                android:tint="@color/DarkPrimaryColor"
+                                tools:ignore="ContentDescription" />
+
+                            <TextView
+                                style="@style/text_secondaryregular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:layout_toEndOf="@+id/ivmodule2"
+                                android:text="Employee Logged In"
+                                android:textColor="@color/PrimarytextColor"
+                                android:textSize="@dimen/_10sdp"
+                                tools:ignore="RelativeOverlap" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_10sdp"
+                                android:layout_height="@dimen/_10sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/right_arrow"
+                                tools:ignore="ContentDescription" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/Gray200" />
+
+                        <RelativeLayout
+                            android:id="@+id/rlModuleThree"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical"
+                            android:visibility="gone"
+                            android:paddingLeft="@dimen/_15sdp"
+                            android:paddingTop="@dimen/_10sdp"
+                            android:paddingRight="@dimen/_15sdp"
+                            android:paddingBottom="@dimen/_10sdp">
+
+                            <ImageView
+                                android:id="@+id/ivmodule3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/menuleaverequest"
+                                android:tint="@color/DarkPrimaryColor"
+                                tools:ignore="ContentDescription" />
+
+                            <TextView
+                                style="@style/text_secondaryregular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_toRightOf="@+id/ivmodule3"
+                                android:text="Dummy data"
+                                android:textColor="@color/PrimarytextColor"
+                                android:textSize="@dimen/_10sdp"
+                                tools:ignore="RelativeOverlap,RtlHardcoded" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_10sdp"
+                                android:layout_height="@dimen/_10sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/right_arrow"
+                                tools:ignore="ContentDescription" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/Gray200" />
+
+                        <RelativeLayout
+                            android:id="@+id/rlModuleFour"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:visibility="gone"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/_15sdp"
+                            android:paddingTop="@dimen/_10sdp"
+                            android:paddingRight="@dimen/_15sdp"
+                            android:paddingBottom="@dimen/_10sdp">
+
+                            <ImageView
+                                android:id="@+id/ivmodule4"
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/menureferals"
+                                android:tint="@color/DarkPrimaryColor"
+                                tools:ignore="ContentDescription" />
+
+                            <TextView
+                                style="@style/text_secondaryregular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:layout_toEndOf="@+id/ivmodule4"
+                                android:text="@string/referrals"
+                                android:textColor="@color/PrimarytextColor"
+                                android:textSize="@dimen/_10sdp"
+                                tools:ignore="RelativeOverlap" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_10sdp"
+                                android:layout_height="@dimen/_10sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/right_arrow"
+                                tools:ignore="ContentDescription" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvTaskCalList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/crdModule"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:visibility="visible"
+                    android:nestedScrollingEnabled="false" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/crdRecentSubmission"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rvTaskCalList"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    app:cardCornerRadius="@dimen/_2sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/Gray10"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/text_primaryheadingmedium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/_15sdp"
+                                android:visibility="gone"
+                                android:text="Recent Timesheet Submission"
+                                android:textSize="@dimen/_9sdp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.45dp"
+                                android:background="@color/stokecolor" />
+
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvRecentSubmission"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+</layout>

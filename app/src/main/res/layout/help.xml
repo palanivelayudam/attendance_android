@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="data"
+            type="com.acceedo.attendancesystem.fragments.HelpFragment"/>
+    </data>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:id="@+id/llHelp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvSupport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_7sdp"
+            android:paddingRight="@dimen/_7sdp"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            style="@style/text_primaryheadingmedium"
+            android:textColor="@color/liteBlack"
+            android:text="@string/support"
+            android:textSize="@dimen/_13sdp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/Gray400"/>
+
+        <TextView
+            android:id="@+id/tvAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/text_primaryheadingmedium"
+            android:textColor="@color/liteBlack"
+            android:paddingLeft="@dimen/_7sdp"
+            android:paddingRight="@dimen/_7sdp"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            android:text="@string/about"
+            android:textSize="@dimen/_13sdp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/Gray400"/>
+
+        <TextView
+            android:id="@+id/tvTerms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/text_primaryheadingmedium"
+            android:textColor="@color/liteBlack"
+            android:paddingLeft="@dimen/_7sdp"
+            android:paddingRight="@dimen/_7sdp"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            android:text="@string/terms_of_use"
+            android:visibility="gone"
+            android:textSize="@dimen/_13sdp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:visibility="gone"
+            android:background="@color/Gray400"/>
+
+        <TextView
+            android:id="@+id/tvPrivacypolicy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/text_primaryheadingmedium"
+            android:textColor="@color/liteBlack"
+            android:paddingLeft="@dimen/_7sdp"
+            android:paddingRight="@dimen/_7sdp"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            android:text="@string/privacy_policy"
+            android:visibility="gone"
+            android:textSize="@dimen/_13sdp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:visibility="gone"
+            android:background="@color/Gray400"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llAbout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+            <WebView
+                android:id="@+id/webViewAbout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_13sdp"
+                android:visibility="gone"
+                style="@style/text_primaryheadingmedium"
+                android:textColor="@color/liteBlack"
+                android:paddingLeft="@dimen/_7sdp"
+                android:paddingRight="@dimen/_7sdp"
+                android:text="@string/about"/>
+
+            <TextView
+                android:id="@+id/tvVersionNameAbout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Gray61"
+                android:textSize="13sp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                style="@style/text_primaryheadingmedium"
+                android:paddingLeft="@dimen/_7sdp"
+                android:paddingRight="@dimen/_7sdp"
+                android:textStyle="bold"
+                android:text="Version Name : 1.0"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSupport"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+            <WebView
+                android:id="@+id/webViewSupport"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="16sp"
+                android:visibility="gone"
+                style="@style/text_primaryheadingmedium"
+                android:text="@string/about"
+                />
+
+            <TextView
+                android:id="@+id/tvVersionNameSupport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Gray61"
+                android:textSize="13sp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                style="@style/text_primaryheadingmedium"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:text="Version Name : 1.0"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+</layout>

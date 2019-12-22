@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="data"
+            type="com.acceedo.attendancesystem.adapter.SliderDashBoard"/>
+    </data>
+
+<RelativeLayout
+    android:layout_width="@dimen/_160sdp"
+    android:layout_height="@dimen/_130sdp"
+    android:layout_marginRight="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_10sdp"
+    app:cardBackgroundColor="@color/PrimaryColor">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="@dimen/_130sdp"
+        app:cardBackgroundColor="@color/PrimaryColor"
+        app:cardCornerRadius="@dimen/_3sdp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="This Week"
+                android:textAllCaps="true"
+                android:visibility="gone"
+                android:textSize="@dimen/_10sdp"
+                android:layout_above="@+id/tvHours"
+                style="@style/text_secondaryregularwhite"/>
+            <TextView
+                android:id="@+id/tvHours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="34:50"
+                android:textSize="@dimen/_26sdp"
+                style="@style/text_primaryheadingmediumwhite"/>
+            <TextView
+                android:id="@+id/tvhourstext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvHours"
+                android:layout_centerHorizontal="true"
+                android:text="Hours"
+                android:textSize="@dimen/_9sdp"
+                style="@style/text_secondaryregularmenusmall"
+                android:textColor="@color/litered"/>
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:src="@drawable/stopwatch"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
+</layout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/tvDayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_primaryheadingmedium"
+        android:padding="2dp"
+        android:text="SUN"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="@dimen/_9sdp"
+        android:textColor="@color/secondarydarktextColor" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_primaryheadingmedium"
+        android:padding="2dp"
+        android:text="23"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="@dimen/_10sdp"
+        android:textColor="@color/white" />
+
+</LinearLayout>

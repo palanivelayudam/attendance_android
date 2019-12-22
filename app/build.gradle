@@ -1,0 +1,279 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+def increaseReleaseVersionCode() {
+    gradle.taskGraph.whenReady { taskGraph ->
+        if (taskGraph.hasTask(assembleProductionRelease)) {
+            /* when run release task */
+
+            def versionPropsFile = file('version.properties')
+
+            if (versionPropsFile.canRead()) {
+                def Properties versionProps = new Properties()
+
+                versionProps.load(new FileInputStream(versionPropsFile))
+
+                def build = versionProps['VERSION_BUILD'].toInteger() + 1
+                def code = versionProps['VERSION_CODE'].toInteger() + 1
+
+                def name = versionProps['VERSION_MAJOR'].toInteger() + "." + versionProps['VERSION_MINOR'].toInteger() + "." + code
+
+                versionProps['VERSION_NAME'] = name
+
+                versionProps['VERSION_BUILD'] = build.toString()
+                versionProps['VERSION_CODE'] = code.toString()
+                versionProps.store(versionPropsFile.newWriter(), null)
+            } else {
+                throw new GradleException("Could not read version.properties!")
+            }
+        }
+    }
+}
+
+def increaseDevVersionCode() {
+    gradle.taskGraph.whenReady { taskGraph ->
+        if (taskGraph.hasTask(assembleDevelopmentDebug)) {
+            /* when run release task */
+
+            def versionPropsFile = file('version.properties')
+
+            if (versionPropsFile.canRead()) {
+                def Properties versionProps = new Properties()
+
+                versionProps.load(new FileInputStream(versionPropsFile))
+
+                def build = versionProps['DEV_VERSION_BUILD'].toInteger() + 1
+                def code = versionProps['DEV_VERSION_CODE'].toInteger() + 1
+
+                def name = versionProps['DEV_VERSION_MAJOR'].toInteger() + "." + versionProps['DEV_VERSION_MINOR'].toInteger() + "." + code
+
+                versionProps['DEV_VERSION_NAME'] = name
+                versionProps['DEV_VERSION_BUILD'] = build.toString()
+                versionProps['DEV_VERSION_CODE'] = code.toString()
+                versionProps.store(versionPropsFile.newWriter(), null)
+            } else {
+                throw new GradleException("Could not read version.properties!")
+            }
+        }
+    }
+}
+
+def increaseDebugVersionCode() {
+    gradle.taskGraph.whenReady { taskGraph ->
+        if (taskGraph.hasTask(assembleLocalDebug)) {
+            /* when run release task */
+
+            def versionPropsFile = file('version.properties')
+
+            if (versionPropsFile.canRead()) {
+                def Properties versionProps = new Properties()
+
+                versionProps.load(new FileInputStream(versionPropsFile))
+
+                def build = versionProps['DEBUG_VERSION_BUILD'].toInteger() + 1
+                def code = versionProps['DEBUG_VERSION_CODE'].toInteger() + 1
+
+                def name = versionProps['DEBUG_VERSION_MAJOR'].toInteger() + "." + versionProps['DEBUG_VERSION_MINOR'].toInteger() + "." + code
+
+                versionProps['DEBUG_VERSION_NAME'] = name
+                versionProps['DEBUG_VERSION_BUILD'] = build.toString()
+                versionProps['DEBUG_VERSION_CODE'] = code.toString()
+                versionProps.store(versionPropsFile.newWriter(), null)
+            } else {
+                throw new GradleException("Could not read version.properties!")
+            }
+        }
+    }
+}
+
+android {
+
+    dataBinding {
+        enabled = true
+    }
+
+    compileSdkVersion 28
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.acceedo.attendancesystem"
+        minSdkVersion 19
+        targetSdkVersion 28
+        multiDexEnabled true
+//        versionCode 1
+//        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        applicationVariants.all { variant ->
+            if (variant.name.startsWith("production")) {
+                increaseReleaseVersionCode()
+            } else if (variant.name.startsWith("local")) {
+                increaseDebugVersionCode()
+            } else if (variant.name.startsWith("development")) {
+                increaseDevVersionCode()
+            }
+        }
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    flavorDimensions "version"
+    productFlavors
+            {
+                production
+                        {
+                            dimension "version"
+
+                            applicationId "com.acceedo.attendancesystem"
+                            minSdkVersion 19
+                            targetSdkVersion 28
+                            testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+                            resValue "string", "app_name", "Attendance System"
+                            buildConfigField 'String', 'BASE_URL', '"https://wms.sisar.nl/"'
+
+                            def versionPropsFile = file('version.properties')
+                            if (versionPropsFile.canRead()) {
+                                def Properties versionProps = new Properties()
+                                versionProps.load(new FileInputStream(versionPropsFile))
+                                def name = versionProps['VERSION_NAME']
+                                def code = versionProps['VERSION_CODE'].toInteger()
+                                versionProps['VERSION_CODE'] = code.toString()
+                                versionProps.store(versionPropsFile.newWriter(), null)
+
+                                versionCode code
+                                versionName name
+
+//                increaseReleaseVersionCode()
+                            } else {
+                                throw new GradleException("Could not read version.properties!")
+                            }
+                        }
+                local
+                        {
+                            dimension "version"
+
+                            applicationId "com.acceedo.attendancesystem.debug"
+                            minSdkVersion 19
+                            targetSdkVersion 28
+                            testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+                            resValue "string", "app_name", "Debug Attendance System"
+                            buildConfigField 'String', 'BASE_URL', '"https://wms.sisar.nl/"'
+
+                            def versionPropsFile = file('version.properties')
+                            if (versionPropsFile.canRead()) {
+                                def Properties versionProps = new Properties()
+                                versionProps.load(new FileInputStream(versionPropsFile))
+                                def name = versionProps['DEBUG_VERSION_NAME']
+                                def code = versionProps['DEBUG_VERSION_CODE'].toInteger()
+                                versionProps['DEBUG_VERSION_CODE'] = code.toString()
+                                versionProps.store(versionPropsFile.newWriter(), null)
+
+                                versionCode code
+                                versionName name
+
+//                increaseDebugVersionCode()
+                            } else {
+                                throw new GradleException("Could not read version.properties!")
+                            }
+                        }
+                development
+                        {
+                            dimension "version"
+
+                            applicationId "com.acceedo.attendancesystem.dev"
+                            minSdkVersion 19
+                            targetSdkVersion 28
+                            testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+                            resValue "string", "app_name", "Dev Attendance System"
+                            buildConfigField 'String', 'BASE_URL', '"https://wms.sisar.nl/"'
+
+                            def versionPropsFile = file('version.properties')
+                            if (versionPropsFile.canRead()) {
+                                def Properties versionProps = new Properties()
+                                versionProps.load(new FileInputStream(versionPropsFile))
+                                def name = versionProps['DEV_VERSION_NAME']
+                                def code = versionProps['DEV_VERSION_CODE'].toInteger()
+                                versionProps['DEV_VERSION_CODE'] = code.toString()
+                                versionProps.store(versionPropsFile.newWriter(), null)
+
+                                versionCode code
+                                versionName name
+
+//                increaseDevVersionCode()
+                            } else {
+                                throw new GradleException("Could not read version.properties!")
+                            }
+                        }
+
+            }
+
+    dexOptions {
+//        incremental true
+        jumboMode = true
+        preDexLibraries = false
+        javaMaxHeapSize "4g"
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.3.0-alpha01'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0-alpha01'
+    implementation project(':materialprogressbar')
+    implementation 'com.google.firebase:firebase-core:16.0.9'
+    implementation 'com.intuit.sdp:sdp-android:1.0.5'
+    implementation('com.crashlytics.sdk.android:crashlytics:2.9.1@aar') {
+        transitive = true
+    }
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.material:material:1.0.0-rc01'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'com.google.firebase:firebase-messaging:17.6.0'
+    implementation 'com.google.android.gms:play-services-places:16.0.0'
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.3.1'
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.1'
+    implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.8.0'
+    implementation 'org.apache.httpcomponents:httpclient-android:4.3.5.1'
+    implementation('org.apache.httpcomponents:httpmime:4.3') {
+        exclude module: "httpclient"
+    }
+    implementation 'com.github.joielechong:countrycodepicker:2.3.0'
+    // implementation 'com.github.blikoon:QRCodeScanner:0.1.2'
+    implementation 'com.github.javiersantos:MaterialStyledDialogs:2.1'
+    //implementation project(':library')
+    implementation 'com.mikepenz:iconics-core:2.8.2@aar'
+    implementation 'com.mikepenz:material-design-iconic-typeface:2.2.0.2@aar'
+    implementation('com.mikepenz:aboutlibraries:5.9.4@aar') {
+        transitive = true
+    }
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation project(':qrcodescanner')
+}
+apply plugin: 'com.google.gms.google-services'

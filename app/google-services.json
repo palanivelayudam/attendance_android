@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "872332189281",
+    "firebase_url": "https://workforce-management-sys-f2161.firebaseio.com",
+    "project_id": "workforce-management-sys-f2161",
+    "storage_bucket": "workforce-management-sys-f2161.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:872332189281:android:bf7cdc2678034eef",
+        "android_client_info": {
+          "package_name": "com.sisar.wms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "872332189281-j6fj8hj3p24l7nr61sq6b7gtfej17hl7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAg4eF0-OhRa1fAh50-9celszSBpvCqA9E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "872332189281-j6fj8hj3p24l7nr61sq6b7gtfej17hl7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

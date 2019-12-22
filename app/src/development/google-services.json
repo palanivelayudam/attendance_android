@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "669822759205",
+    "firebase_url": "https://freelanceproject-de3c9.firebaseio.com",
+    "project_id": "freelanceproject-de3c9",
+    "storage_bucket": "freelanceproject-de3c9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669822759205:android:614ec70469a3534b47aacc",
+        "android_client_info": {
+          "package_name": "com.acceedo.attendancesystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "669822759205-puqss4hqvn96au2bkqkla42bh4gq7deo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChd8HgSsO3bgk_LAhbPf9FTUYawMwIULE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "669822759205-puqss4hqvn96au2bkqkla42bh4gq7deo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669822759205:android:d47c313c7b96877147aacc",
+        "android_client_info": {
+          "package_name": "com.acceedo.attendancesystem.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "669822759205-puqss4hqvn96au2bkqkla42bh4gq7deo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChd8HgSsO3bgk_LAhbPf9FTUYawMwIULE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "669822759205-puqss4hqvn96au2bkqkla42bh4gq7deo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669822759205:android:c521a5e54d3a225047aacc",
+        "android_client_info": {
+          "package_name": "com.acceedo.attendancesystem.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "669822759205-puqss4hqvn96au2bkqkla42bh4gq7deo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChd8HgSsO3bgk_LAhbPf9FTUYawMwIULE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "669822759205-puqss4hqvn96au2bkqkla42bh4gq7deo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

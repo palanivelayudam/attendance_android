@@ -1,0 +1,157 @@
+<resources>
+    <!--<string name="app_name">WMS</string>-->
+    <string name="get_started">Get Started</string>
+    <string name="closeDrawer">Navigation View</string>
+    <string name="openDrawer">Navigation View Closed</string>
+    <string name="time_sheet">Time Sheet</string>
+    <string name="hello">Hello,</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="forgetpassword">Forgot Password?</string>
+    <string name="enteremail">Enter Email</string>
+    <string name="enterpassowrd">Enter Password</string>
+    <string name="entervalidemail">Enter Valid Email</string>
+    <string name="submit">Submit</string>
+    <string name="password">Password</string>
+    <string name="forgetpasswordhead">Forgot Password</string>
+    <string name="add_task">Add Task</string>
+    <string name="taskname">Task Name</string>
+    <string name="comments">Comments</string>
+    <string name="cancel">Cancel</string>
+    <string name="create">Create</string>
+    <string name="task">Task</string>
+    <string name="project">Project</string>
+
+    <!--menuName-->
+    <string name="dashbord">Dashboard</string>
+    <string name="email">Email</string>
+    <string name="ok">Ok</string>
+    <string name="logouttext">Are you sure you want to Logout?</string>
+    <string name="referrals">Referrals</string>
+    <string name="leaverequest">Leave Request</string>
+
+    <string name="lbl_nointernet_title">No Internet</string>
+    <string name="lbl_nointernet_details">No Internet Connection Available. Do you want to try again?</string>
+    <string name="lbl_nointernet_btn_yes">Yes</string>
+    <string name="lbl_nointernet_btn_no">No</string>
+    <string name="update">Update</string>
+    <string name="announcement">Announcement</string>
+    <string name="gallery">Gallery</string>
+
+
+    <string name="notifaication_enable_push_notification">Enable push notification</string>
+    <string name="notifaication_enable_email_notification">Enable Email notification</string>
+    <string name="notifaication_enable_sms_notification">Enable SMS notification</string>
+    <string name="notification_smsnotify">Disabling this option will block SMS notification from</string>
+    <string name="notification_emailnotify">Disabling this option will block Email notification from</string>
+    <string name="notification_pushnotification">Disabling this option will block push notification from</string>
+
+
+    <string name="changepassword_oldpassword">Enter Old Password</string>
+    <string name="changepassword_newpassword">Enter New Password</string>
+    <string name="changepassword_passwordshouldbe">Password should be minimum 5 characters</string>
+    <string name="changepassword_enterconfirmpassword">Enter Confirm Password</string>
+    <string name="changepassword_mismatch">Password mismatch</string>
+
+    <!-- FAQ-->
+    <string name="faq_app_version">App Version</string>
+
+    <!--HELP-->
+    <string name="help_app_version">App Version</string>
+    <string name="help_title_about">About</string>
+
+    <!--common strings-->
+    <string name="lbl_OldPassword">Old Password</string>
+    <string name="lbl_NewPassword">New Password</string>
+    <string name="lbl_ConfirmPassword">Confirm New Password</string>
+    <string name="lbl_backpressed">Press again to exit</string>
+    <string name="lbl_serverdown">We are currently facing some issues with our server. Please try again later.</string>
+    <string name="lbl_internet_connection">Internet connection is currently unavailable. Try again when you have access to Internet</string>
+    <string name="lbl_jsonerror">Unable to process due to server issues. Please try agian.</string>
+    <string name="error500">Something Went Wrong ,Please try again</string>
+    <string name="change_password">Change Password</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="preferences">Preferences</string>
+    <string name="about">About</string>
+    <string name="support">Support</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_of_use">Terms of Use</string>
+    <string name="feedback">FEEDBACK</string>
+    <string name="feedbacktitle">Feedback</string>
+    <!--common strings-->
+
+    <!--Feedback-->
+    <string name="feedback_title">Feedback</string>
+    <string name="feedback_name">Name*</string>
+    <string name="feedback_email">Email*</string>
+    <string name="feedback_comments">Comments</string>
+    <string name="feedback_submit">Submit</string>
+    <string name="feedback_close">Close</string>
+    <string name="feedback_entername">Enter Your Name</string>
+    <string name="feedback_enteremail">Enter Your Email</string>
+    <string name="feedback_entercomments">Enter Comments</string>
+    <string name="feedback_feedbackcomments">Enter your Feedback</string>
+    <string name="feedback_whatneedtobeimproved">What need to be improved?*</string>
+    <string name="feedback_ratethisapp">Rate this app</string>
+    <string name="attachements">Attachements</string>
+    <string name="feedback_rating">Rate us</string>
+
+    <string-array name="MenuItemNames">
+        <item>Dashboard</item>
+        <item>Scan Employee</item>
+        <item>Employee Logged In</item>
+        <item>Setting</item>
+        <item>Logout</item>
+        <!-- <item>Task</item>
+        <item>Leave Request</item>
+        <item>Referrals</item>
+        <item>Announcement</item>
+        <item>Gallery</item>-->
+    </string-array>
+
+    <string name="lbl_filecorrupted">Unable to attach this file. File may be courrupted. Try with another image.</string>
+    <string name="llpermissionde"><![CDATA[Unable to access your Storage and Camera. Go to phone settings->Apps->GMIS-CAMS->Permissions->Allow Storage and Camera Access]]></string>
+    <string name="profile_change_the_profile_picture">Change the profile picture</string>
+    <string name="home_gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="setting">Setting</string>
+    <string name="tockenfailederror">Please login again to continue</string>
+    <string name="profile">Profile</string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="mobile">Mobile</string>
+    <string name="gendar">Gender</string>
+    <string name="male">Male</string>
+    <string name="dateofbirth">Date of Birth</string>
+    <string name="female">Female</string>
+    <string name="streetaddress">Street Address</string>
+    <string name="city">City</string>
+    <string name="zipcode">Zipcode</string>
+    <string name="country">Country</string>
+    <string name="state">State</string>
+
+    <!--profile_validate_seterror-->
+    <string name="profile_error_enter_firstname">Enter FirstName</string>
+    <string name="profile_error_enter_lastname">Enter LastName</string>
+    <string name="profile_error_enter_username">Enter UserName</string>
+    <string name="profile_error_enter_phone_number">Enter Mobile Number</string>
+    <string name="profile_error_enter_address">Enter Address</string>
+    <string name="profile_error_enter_countrycode">Enter Country Code</string>
+    <string name="filldialogtextpartfirst">You\'ve completed only</string>
+    <string name="filldilogtextparttwo">% of your profile. Please update your profile</string>
+    <string name="unsavedchagesprofile">You have unsaved changes.Are you sure you want to leave this screen?</string>
+    <string name="main_action_rotate">Rotate 90 degrees clockwise</string>
+    <string name="done">Done</string>
+    <string name="onetimescheckin">One time Check</string>
+    <string name="enterurl">Enter Api Url</string>
+    <string name="selecttime">Select Shift Time</string>
+    <string name="address">Employee Address</string>
+    <string name="supervisor">supervisor</string>
+    <string name="department">Department</string>
+    <string name="useronline">Employee Logged In</string>
+    <string name="contractor">Contractor</string>
+    <string name="outtime">In Time</string>
+    <string name="intime">Scan Type</string>
+</resources>
